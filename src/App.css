@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #24304a;
+  background: #f5f7fc;
+}
+
+/* Header */
+
+header {
+  background: #243b67;
+  color: white;
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #a9c7ff;
+}
+
+/* Main */
+
+.hero {
+  background: linear-gradient(135deg, #243b67, #5279bb);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #243b67;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #dce8ff;
+  transform: translateY(-3px);
+}
+
+/* About */
+
+.about {
+  padding: 75px 10%;
+  text-align: center;
+  background: white;
+}
+
+.about h2,
+.courses h2,
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Courses */
+
+.courses {
+  padding: 75px 8%;
+  text-align: center;
+  background: #edf2fc;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  width: 280px;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #243b6715;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px #243b6730;
+}
+
+.card h3 {
+  color: #31558e;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+/* Contact */
+
+.contact {
+  padding: 65px 20px;
+  text-align: center;
+  background: white;
+}
+
+.contact p {
+  margin: 12px;
+  font-size: 17px;
+}
+
+/* Footer */
+
+footer {
+  background: #243b67;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
